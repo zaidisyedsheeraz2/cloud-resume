@@ -1,0 +1,37 @@
+.entry {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .entry:last-child {
+    border-bottom: none;
+  }
+
+  .year {
+    font-weight: bold;
+    color: #666;
+    width: 20%;
+  }
+
+  .content {
+    width: 75%;
+  }
+
+  .title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .institution {
+    color: #555;
+  }
+
+  .description {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+  }
