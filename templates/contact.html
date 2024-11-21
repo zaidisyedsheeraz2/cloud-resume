@@ -47,23 +47,43 @@
             </div>
           </nav>
     </header>
-    
+
     <main>
         <div class="row" style="background-color: lightgray">
             <div class="row">
-                <div class="col-md-6">
-                    <img src="/static/img/file.png" style="height: 100%; width: 100%; border-radius: 50%;padding: 10%;">
-                </div>
-                <div class="col-md-6" style="padding: 10%;">
-                    <h1>Syed Sheeraz Zaidi</h1>
-                    <h3>A bit about me</h3>
-                    <span><p>I am Investigtion Spec working at Amazon with a strong foundation in cloud computing and IT infrastructure, I am passionate about starting my career as a Cloud Engineer. </p></span>
-                    <span><p>I hold AWS and Rehdat certifications for Cloud and working on Linux. I have hands on experiance with AWS Cloud. During my tenure, I developed a solid understanding of cloud architecture, virtualization, networking, and security. </p></span>
-                    <span><p>I am particularly interested in leveraging my skills in cloud deployment, automation, and infrastructure management to contribute to innovative and scalable cloud solutions. With a commitment to continuous learning and a strong interest in DevOps tools and practices, I am eager to collaborate with experienced teams and make a meaningful impact in the field of cloud engineering.</p></span>
+                <div class="container" style="padding: 10%;">
+                    <div class="row">
+                        <h1 class="">Leave a Message</h1>
+                        <hr>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <form method="POST" action="/submit_form">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required class="form-control"><br><br>
+    
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required class="form-control"><br><br>
+    
+                                <label for="phone">Phone:</label>
+                                <input type="text" id="phone" name="phone" required class="form-control"><br><br>
+    
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" required class="form-control"></textarea><br><br>
+    
+                                <button type="submit" class="form-control btn btn-secondary">Submit</button>
+                            </form>
+                        </div>
+                        <div class="col-md-3"></div>
+                        
+                        
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </main>
+
+
     <footer>
         <div class="row" style="padding: 10%;">
             <div class="container">
