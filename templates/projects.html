@@ -53,37 +53,48 @@
             <div class="row">
                 <div class="container" style="padding: 10%;">
                     <div class="row">
-                        <h1>View Contacts</h1>
+                        <h1 class="">Recent Projects</h1>
                         <hr>
-                        <div class="col-md-3"></div>
-                        <div class="col-md-6 table-responsive">
-                            <table class="table table-striped">
-                                <thead>
-                                  <tr>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Phone</th>
-                                    <th>Message</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                {% for contact in contacts %}
-                                <tr>
-                                    <td>{{ contact['name'] }}</td>
-                                    <td>{{ contact['email'] }}</td>
-                                    <td>{{ contact['phone'] }}</td>
-                                    <td>{{ contact['message'] }}</td>
-                                </tr>
-                                {% endfor %}
-                            </tbody>
-                            </table>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="/static/img/default_img.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Cold Email Generator</h5>
+                                  <p class="card-text">Generate emails to send in a few clicks</p>
+                                  <a href="#" class="btn btn-primary">Launch</a>
+                                </div>
+                              </div>
                         </div>
-                        <div class="col-md-3"></div>
-                    </div>    
+                        <div class="col-md-4">
+                              <div class="card" style="width: 18rem;">
+                                <img src="/static/img/default_img.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Trip Calculator</h5>
+                                  <p class="card-text">Find the cost of your roadtrip in a few clicks</p>
+                                  <a href="#" class="btn btn-primary">Launch</a>
+                                </div>
+                              </div>
+                              
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="/static/img/default_img.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Chat Bot using Bedrock</h5>
+                                  <p class="card-text">ChatBot Poweredby Beadrock</p>
+                                  <a href="#" class="btn btn-primary">Launch</a>
+                                </div>
+                              </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </main>
+
 
     <footer>
         <div class="row" style="padding: 10%;">

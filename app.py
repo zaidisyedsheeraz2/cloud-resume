@@ -64,6 +64,10 @@ def view_contacts():
     contacts = list(contacts_collection.find())  # Retrieve all documents from MongoDB
     return render_template('view_contacts.html', contacts=contacts)
 
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
+
 
 @app.errorhandler(404)
 def page_not_found(e):
