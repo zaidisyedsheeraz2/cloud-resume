@@ -56,7 +56,13 @@ def submit_form():
         contact_entry = {'name': name, 'email': email, 'phone':phone, 'message': message}
         contacts_collection.insert_one(contact_entry)
 
+        # Debugging print statement
+        print("Flashing message: Your message has been saved successfully!")
+
         flash("Your message has been saved successfully!", "success")
+
+        # print(session)
+
         return redirect(url_for('contact'))
     
 @app.route('/view_contacts')
